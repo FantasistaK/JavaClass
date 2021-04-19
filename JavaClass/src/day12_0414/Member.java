@@ -1,18 +1,18 @@
 package day12_0414;
 
 public class Member {
-	// í•„ë“œ ì„ ì–¸
+	// ÇÊµå ¼±¾ğ
 	String id;
 	String password;
 	String name;
 	int age;
 	
-	// ê¸°ë³¸ìƒì„±ì
+	// ±âº»»ı¼ºÀÚ
 	Member () {
 	
 	}
 	
-	// ë§¤ê°œë³€ìˆ˜ ìˆëŠ” ìƒì„±ì
+	// ¸Å°³º¯¼ö ÀÖ´Â »ı¼ºÀÚ
 	Member (String id, String password, String name, int age) {
 		this.id = id;
 		this.password = password;
@@ -20,7 +20,7 @@ public class Member {
 		this.age = age;
 	}
 	
-	// info ë©”ì†Œë“œ
+	// info ¸Ş¼Òµå
 	void info(){
 		System.out.println(this.id);
 		System.out.println(this.password);
@@ -28,12 +28,12 @@ public class Member {
 		System.out.println(this.age);
 	}
 	
-	// update ë©”ì†Œë“œ
+	// update ¸Ş¼Òµå
 	void update(String name) {
 		this.name = name;
 	}
 	
-	// myName ë©”ì†Œë“œ
+	// myName ¸Ş¼Òµå
 	String myName() {
 		return this.name;
 	}

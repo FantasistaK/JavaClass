@@ -3,23 +3,23 @@ package day12_0414;
 public class MemberMain {
 
 	public static void main(String[] args) {
-		// ê¸°ë³¸ìƒì„±ìë¥¼ ì´ìš©í•œ ê°ì²´ì„ ì–¸
+		// ±âº»»ı¼ºÀÚ¸¦ ÀÌ¿ëÇÑ °´Ã¼¼±¾ğ
 		Member mb1 = new Member();
 		
 		mb1.id = "id1";
 		mb1.password = "1234";
-		mb1.name = "ì´ë¦„1";
+		mb1.name = "ÀÌ¸§1";
 		mb1.age = 20;
 		
 		mb1.info();
-		mb1.update("ì´ë¦„1-1");
+		mb1.update("ÀÌ¸§1-1");
 		System.out.println(mb1.myName());
 		
-		// ë§¤ê°œë³€ìˆ˜ê°€ ìˆëŠ” ìƒì„±ìë¥¼ ì´ìš©í•œ ê°ì²´ì„ ì–¸
-		Member mb2 = new Member("id2", "4321", "ì´ë¦„2", 30);
+		// ¸Å°³º¯¼ö°¡ ÀÖ´Â »ı¼ºÀÚ¸¦ ÀÌ¿ëÇÑ °´Ã¼¼±¾ğ
+		Member mb2 = new Member("id2", "4321", "ÀÌ¸§2", 30);
 		
 		mb2.info();
-		mb2.update("ì´ë¦„2-1");
+		mb2.update("ÀÌ¸§2-1");
 		System.out.println(mb2.myName());
 		
 

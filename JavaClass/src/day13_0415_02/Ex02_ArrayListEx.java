@@ -5,34 +5,38 @@ import java.util.*;
 public class Ex02_ArrayListEx {
 
 	public static void main(String[] args) {
-		// 
-
+		/*
+		 * ArrayList¿¡ ¿µ¾î·Î µÈ ´Ü¾î 5°³¸¦ ½ºÄ³³Ê·Î ÀÔ·Â¹Þ°í
+		 * ÀÔ·Â¹ÞÀº ´Ü¾î¸¦ ¸ðµÎ Ãâ·ÂÇÏ°í
+		 * ¸¶Áö¸·¿¡´Â °¡Àå ±ä ´Ü¾î¸¦ Ãâ·ÂÇÏ½Ã¿À
+		 */
+		
+		String var1 = "water";
+		System.out.println(var1.length());
+		
 		Scanner sc = new Scanner(System.in);
 		List<String> list = new ArrayList<String>();
 		
-		for(int i = 0; i < 5 ; i++) {
-			System.out.print("ë‹¨ì–´ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ");
-			list.add(sc.nextLine());
+		for(int i=0;i<5;i++) {
+			System.out.print("´Ü¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä :");
+			list.add(sc.next());
 		}
+		int maxlength = 0;
+		int max = 0;
 		
-		int maxlength = 0, maxindex = 0;
-
-		for(int i = 0; i < list.size(); i++) {
+		for(int i=0;i<5;i++) {
 			
 			System.out.println(list.get(i));
-			
-//			if (maxlength < list.get(i).length()) {
-//				maxlength = list.get(i).length();
-//				maxindex = i;
-//			}
-			
-			if (list.get(maxindex).length() < list.get(i).length())
-				maxindex = i;
-			
-			
+			String word = list.get(i);
+			int wordlength = word.length();
+			if (maxlength < wordlength) { 
+				maxlength = wordlength;
+				max = i;
+			}
 		}
 		
-		System.out.print("ê°€ìž¥ ê¸´ ë‹¨ì–´ëŠ” : " + list.get(maxindex));
+		System.out.println("°¡Àå ±ä ´Ü¾î´Â : "+list.get(max));
+		
 		
 	}
 
