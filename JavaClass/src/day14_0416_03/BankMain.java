@@ -5,88 +5,130 @@ import java.util.*;
 public class BankMain {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		boolean run = true;
-		int clientNumber=0;
-		
-		Bank b1 = new Bank();
-		
+		int clientNumber = 0;
+
 		List<Bank> clientList = new ArrayList<Bank>();
-		
-		
+
 		do {
-		
-			System.out.println("--------------------------------------------------------------------------");
-			System.out.println("1. ê³ ê°ë“±ë¡(get,set) | 2. ê³ ê°ë“±ë¡(ìƒì„±ì) | 3. ì…ê¸ˆ | 4. ì¶œê¸ˆ | 5. ê³ ê°ë¦¬ìŠ¤íŠ¸ | 6. ì¢…ë£Œ");
-			System.out.println("--------------------------------------------------------------------------");
-			System.out.print("ì„ íƒ > ");
+
+			System.out.println("-----------------------------------------------------------------------------");
+			System.out.println("1. °í°´µî·Ï(get,set) | 2. °í°´µî·Ï(»ı¼ºÀÚ) | 3. ÀÔ±İ | 4. Ãâ±İ | 5. °í°´¸®½ºÆ® | 6. Á¾·á");
+			System.out.println("-----------------------------------------------------------------------------");
+			System.out.print("¼±ÅÃ > ");
 			int select = sc.nextInt();
-			
+
 			switch (select) {
-			
+
 			case 1:
-				
-				System.out.print("ì´ë¦„ : ");
+
+				Bank client = new Bank();
+				System.out.print("ÀÌ¸§ : ");
 				String name = sc.next();
-				b1.setName(name);
-				System.out.print("ê³„ì¢Œ : ");
+				client.setName(name);
+				System.out.print("°èÁÂ : ");
 				String accountNumber = sc.next();
-				b1.setAccountNumber(accountNumber);
-				System.out.print("ì…ê¸ˆì•¡ : ");
+				client.setAccountNumber(accountNumber);
+				System.out.print("ÀÔ±İ¾× : ");
 				int balance = sc.nextInt();
-				b1.setBalance(balance);
+				client.setBalance(balance);
 				clientNumber++;
-				b1.setClientNumber(clientNumber);
-				
-				clientList.add(b1);
-				
+				client.setClientNumber(clientNumber);
+
+				clientList.add(client);
+
 				break;
-			
+
 			case 2:
-				
-				System.out.print("ì´ë¦„ : ");
-				String name2 = sc.next();
-				System.out.print("ê³„ì¢Œ : ");
-				String accountNumber2 = sc.next();
-				System.out.print("ì…ê¸ˆì•¡ : ");
-				int balance2 = sc.nextInt();
+
+				System.out.print("ÀÌ¸§ : ");
+				name = sc.next();
+				System.out.print("°èÁÂ : ");
+				accountNumber = sc.next();
+				System.out.print("ÀÔ±İ¾× : ");
+				balance = sc.nextInt();
 				clientNumber++;
-				
-				Bank b2 = new Bank(clientNumber, name2, accountNumber2, balance2);
-				
-				clientList.add(b2);
-				
+
+				client = new Bank(clientNumber, name, accountNumber, balance);
+
+				clientList.add(client);
+
 				break;
-				
+
 			case 3:
-				
+
+				System.out.print("°èÁÂ : ");
+				accountNumber = sc.next();
+				System.out.print("ÀÔ±İ¾× : ");
+				int deposit = sc.nextInt();
+				int correct = 0;
+
+				for (int i = 0; i < clientList.size(); i++) {
+					if (accountNumber.equals(clientList.get(i).getAccountNumber())) {
+						clientList.get(i).setBalance(clientList.get(i).getBalance() + deposit);
+						correct = 1;
+					}
+				}
+
+				if (correct == 1)
+					System.out.println("ÀÔ±İ Ã³¸® µÇ¾ú½À´Ï´Ù.");
+				else
+					System.out.println("°èÁÂ¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù.");
+
 				break;
-				
+
 			case 4:
-				
+
+				System.out.print("°èÁÂ : ");
+				accountNumber = sc.next();
+				System.out.print("Ãâ±İ¾× : ");
+				int output = sc.nextInt();
+				correct = 0;
+
+				for (int i = 0; i < clientList.size(); i++) {
+					if (accountNumber.equals(clientList.get(i).getAccountNumber())) {
+						balance = clientList.get(i).getBalance() - output;
+						if (balance >= 0) {
+							clientList.get(i).setBalance(balance);
+							correct = 1;
+						} else {
+							correct = 2;
+						}
+					}
+				}
+
+				if (correct == 1)
+					System.out.println("Ãâ±İ Ã³¸® µÇ¾ú½À´Ï´Ù.");
+				else if (correct == 2)
+					System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+				else if (correct == 0)
+					System.out.println("°èÁÂ¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù.");
+
 				break;
-				
+
 			case 5:
-				
-				for(int i = 0; i < clientList.size(); i++)
-					System.out.println(clientList.get(i));
-				
+
+				if (clientList.size() > 0)
+					for (int i = 0; i < clientList.size(); i++)
+						System.out.println(clientList.get(i));
+				else
+					System.out.println("°í°´À» µî·ÏÇØ ÁÖ¼¼¿ä.");
+
 				break;
-			
+
 			case 6:
-				
+
+				System.out.println("ÇÁ·Î±×·¥À» Á¾·á ÇÕ´Ï´Ù.");
 				run = false;
 				break;
-				
+
 			}
 
-		
-		} while(run);
-		
-		
-		
+		} while (run);
+
 	}
 
 }
