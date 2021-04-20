@@ -11,28 +11,28 @@ public class BankMain {
 		boolean run = true;
 		int clientNumber = 0;
 
-		List<Bank> clientList = new ArrayList<Bank>();
+		List<BankDTO> clientList = new ArrayList<BankDTO>();
 
 		do {
 
 			System.out.println("-----------------------------------------------------------------------------");
-			System.out.println("1. °í°´µî·Ï(get,set) | 2. °í°´µî·Ï(»ı¼ºÀÚ) | 3. ÀÔ±İ | 4. Ãâ±İ | 5. °í°´¸®½ºÆ® | 6. Á¾·á");
+			System.out.println("1. ê³ ê°ë“±ë¡(get,set) | 2. ê³ ê°ë“±ë¡(ìƒì„±ì) | 3. ì…ê¸ˆ | 4. ì¶œê¸ˆ | 5. ê³ ê°ë¦¬ìŠ¤íŠ¸ | 6. ì¢…ë£Œ");
 			System.out.println("-----------------------------------------------------------------------------");
-			System.out.print("¼±ÅÃ > ");
+			System.out.print("ì„ íƒ > ");
 			int select = sc.nextInt();
 
 			switch (select) {
 
 			case 1:
 
-				Bank client = new Bank();
-				System.out.print("ÀÌ¸§ : ");
+				BankDTO client = new BankDTO();
+				System.out.print("ì´ë¦„ : ");
 				String name = sc.next();
 				client.setName(name);
-				System.out.print("°èÁÂ : ");
+				System.out.print("ê³„ì¢Œ : ");
 				String accountNumber = sc.next();
 				client.setAccountNumber(accountNumber);
-				System.out.print("ÀÔ±İ¾× : ");
+				System.out.print("ì…ê¸ˆì•¡ : ");
 				int balance = sc.nextInt();
 				client.setBalance(balance);
 				clientNumber++;
@@ -44,15 +44,15 @@ public class BankMain {
 
 			case 2:
 
-				System.out.print("ÀÌ¸§ : ");
+				System.out.print("ì´ë¦„ : ");
 				name = sc.next();
-				System.out.print("°èÁÂ : ");
+				System.out.print("ê³„ì¢Œ : ");
 				accountNumber = sc.next();
-				System.out.print("ÀÔ±İ¾× : ");
+				System.out.print("ì…ê¸ˆì•¡ : ");
 				balance = sc.nextInt();
 				clientNumber++;
 
-				client = new Bank(clientNumber, name, accountNumber, balance);
+				client = new BankDTO(clientNumber, name, accountNumber, balance);
 
 				clientList.add(client);
 
@@ -60,53 +60,18 @@ public class BankMain {
 
 			case 3:
 
-				System.out.print("°èÁÂ : ");
-				accountNumber = sc.next();
-				System.out.print("ÀÔ±İ¾× : ");
-				int deposit = sc.nextInt();
-				int correct = 0;
-
-				for (int i = 0; i < clientList.size(); i++) {
-					if (accountNumber.equals(clientList.get(i).getAccountNumber())) {
-						clientList.get(i).setBalance(clientList.get(i).getBalance() + deposit);
-						correct = 1;
-					}
-				}
-
-				if (correct == 1)
-					System.out.println("ÀÔ±İ Ã³¸® µÇ¾ú½À´Ï´Ù.");
-				else
-					System.out.println("°èÁÂ¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù.");
-
+				BankService bs = new BankService();
+				
+				clientList = bs.Deposit(clientList);
+				
 				break;
 
 			case 4:
 
-				System.out.print("°èÁÂ : ");
-				accountNumber = sc.next();
-				System.out.print("Ãâ±İ¾× : ");
-				int output = sc.nextInt();
-				correct = 0;
-
-				for (int i = 0; i < clientList.size(); i++) {
-					if (accountNumber.equals(clientList.get(i).getAccountNumber())) {
-						balance = clientList.get(i).getBalance() - output;
-						if (balance >= 0) {
-							clientList.get(i).setBalance(balance);
-							correct = 1;
-						} else {
-							correct = 2;
-						}
-					}
-				}
-
-				if (correct == 1)
-					System.out.println("Ãâ±İ Ã³¸® µÇ¾ú½À´Ï´Ù.");
-				else if (correct == 2)
-					System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
-				else if (correct == 0)
-					System.out.println("°èÁÂ¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù.");
-
+				bs = new BankService();
+				
+				clientList = bs.Withdraw(clientList);
+								
 				break;
 
 			case 5:
@@ -115,20 +80,22 @@ public class BankMain {
 					for (int i = 0; i < clientList.size(); i++)
 						System.out.println(clientList.get(i));
 				else
-					System.out.println("°í°´À» µî·ÏÇØ ÁÖ¼¼¿ä.");
+					System.out.println("ê³ ê°ì„ ë“±ë¡í•´ ì£¼ì„¸ìš”.");
 
 				break;
 
 			case 6:
 
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·á ÇÕ´Ï´Ù.");
+				System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œ í•©ë‹ˆë‹¤.");
 				run = false;
 				break;
 
 			}
 
 		} while (run);
-
+		
+		sc.close();
+		
 	}
 
 }
