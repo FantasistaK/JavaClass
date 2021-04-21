@@ -3,19 +3,19 @@ package day03_0401;
 public class Ex5_If {
 
 	public static void main(String[] args) {
-		// if Á¶°ÇÀ» ºñ±³¿¬»ê½Ä È°¿ë
+		// if ì¡°ê±´ì„ ë¹„êµì—°ì‚°ì‹ í™œìš©
 		int num1=0, num2=0;
 		num1 = 50;
 		num2 = 50;
 		if(num1 > num2 && num1 > 0) {
-			// num1ÀÌ num2º¸´Ù Å¬ ¶§ ÀÌºÎºĞÀÌ ½ÇÇà
-			System.out.println("num1ÀÌ Å®´Ï´Ù");
+			// num1ì´ num2ë³´ë‹¤ í´ ë•Œ ì´ë¶€ë¶„ì´ ì‹¤í–‰
+			System.out.println("num1ì´ í½ë‹ˆë‹¤");
 		} else {
-			// num2°¡ num1º¸´Ù Å¬ ¶§ ÀÌºÎºĞÀÌ ½ÇÇà
-			// num2°¡ num1°ú °°À» ¶§¿¡µµ ½ÇÇà
+			// num2ê°€ num1ë³´ë‹¤ í´ ë•Œ ì´ë¶€ë¶„ì´ ì‹¤í–‰
+			// num2ê°€ num1ê³¼ ê°™ì„ ë•Œì—ë„ ì‹¤í–‰
 			
-			// num1ÀÌ num2º¸´Ù Å©Áö ¾ÊÀ» ¶§ ÀÌºÎºĞÀÌ ½ÇÇà
-			System.out.println("num2°¡ Å®´Ï´Ù");
+			// num1ì´ num2ë³´ë‹¤ í¬ì§€ ì•Šì„ ë•Œ ì´ë¶€ë¶„ì´ ì‹¤í–‰
+			System.out.println("num2ê°€ í½ë‹ˆë‹¤");
 		}
 
 	}

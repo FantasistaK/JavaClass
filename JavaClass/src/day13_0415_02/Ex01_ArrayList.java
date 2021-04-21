@@ -10,39 +10,37 @@ public class Ex01_ArrayList {
 		/*
 		 * Collection Framework : List, Set, Map
 		 */
-		// ArrayList ¼±¾ğ(ÀúÀåµ¥ÀÌÅÍ Å¸ÀÔ : String)
+		// ArrayList ì„ ì–¸(ì €ì¥ë°ì´í„° íƒ€ì… : String)
 		List<String> list = new ArrayList<String>();
 		
-		// list ¿¡ µ¥ÀÌÅÍ ÀúÀå : add ¸Ş¼Òµå È£Ãâ
-		list.add("Ã¹¹øÂ°");
-		list.add("µÎ¹øÂ°");
-		list.add("¼¼¹øÂ°");
-		list.add(1,"³×¹øÂ°");
+		// list ì— ë°ì´í„° ì €ì¥ : add ë©”ì†Œë“œ í˜¸ì¶œ
+		list.add("ì²«ë²ˆì§¸");
+		list.add("ë‘ë²ˆì§¸");
+		list.add("ì„¸ë²ˆì§¸");
+		list.add(1,"ë„¤ë²ˆì§¸");
 		
-		// list¿¡ ´ã±ä µ¥ÀÌÅÍ Ãâ·Â
+		// listì— ë‹´ê¸´ ë°ì´í„° ì¶œë ¥
 		System.out.println(list.get(0));
 		System.out.println(list.get(1));
 		System.out.println(list.get(2));
 		
-		// list Å©±â È®ÀÎ
+		// list í¬ê¸° í™•ì¸
 		System.out.println(list.size());
 		
-		// list µ¥ÀÌÅÍ »èÁ¦
+		// list ë°ì´í„° ì‚­ì œ
 		list.remove(1);
 		System.out.println(list.get(1));
 		
-		// for¹®À» ÀÌ¿ëÇÏ¿© list¿¡ ´ã±ä ¸ğµç µ¥ÀÌÅÍ Ãâ·Â
+		// forë¬¸ì„ ì´ìš©í•˜ì—¬ listì— ë‹´ê¸´ ëª¨ë“  ë°ì´í„° ì¶œë ¥
 		
 		for (int i=0 ; i<list.size(); i++) {
 			System.out.println(list.get(i));
 		}
 		
-		// list¿¡ Á¤¼ö¸¦ ÀúÀåÇÒ ¶§
+		// listì— ì •ìˆ˜ë¥¼ ì €ì¥í•  ë•Œ
 		List<Integer> list1 = new ArrayList<Integer>(); // Wrapper Class
 		
-		String var = "°ª";
-		
-		
+		String var = "ê°’";
 		
 	}
 

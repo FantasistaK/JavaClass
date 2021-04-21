@@ -3,49 +3,49 @@ package day11_20210413_01;
 public class PeopleMain {
 
 	public static void main(String[] args) {
-		// PeopleMain Å¬·¡½º¿¡¼­ People Å¬·¡½º¸¦
-		// °´Ã¼·Î ¸¸µé¾î È°¿ë
+		// PeopleMain í´ë˜ìŠ¤ì—ì„œ People í´ë˜ìŠ¤ë¥¼
+		// ê°ì²´ë¡œ ë§Œë“¤ì–´ í™œìš©
 		
-		// People Å¬·¡½º °´Ã¼ ¼±¾ğ
+		// People í´ë˜ìŠ¤ ê°ì²´ ì„ ì–¸
 				
-//     °´Ã¼·Î ¸¸µé Å¬·¡½º ÀÌ¸§		
-//	      ¡è
+//     ê°ì²´ë¡œ ë§Œë“¤ í´ë˜ìŠ¤ ì´ë¦„		
+//	      â†‘
 		People p = new People();
-//	           ¡é          ¡é
-// ÇöÀç ÆÄÀÏ¿¡¼­ ¾µ °´Ã¼ ÀÌ¸§	  ¡é
-//                        ¡é
-//              ÇØ´ç Å¬·¡½º°¡ °¡Áö°íÀÖ´Â »ı¼ºÀÚ
-//              ÇØ´ç Å¬·¡½º°¡ º°µµ·Î »ı¼ºÀÚ¸¦ Á¤ÀÇÇÏ°í ÀÖÁö ¾Ê´Ù¸é ±âº» »ı¼ºÀÚ¸¦ »ç¿ëÇÔ
+//	           â†“          â†“
+// í˜„ì¬ íŒŒì¼ì—ì„œ ì“¸ ê°ì²´ ì´ë¦„	  â†“
+//                        â†“
+//              í•´ë‹¹ í´ë˜ìŠ¤ê°€ ê°€ì§€ê³ ìˆëŠ” ìƒì„±ì
+//              í•´ë‹¹ í´ë˜ìŠ¤ê°€ ë³„ë„ë¡œ ìƒì„±ìë¥¼ ì •ì˜í•˜ê³  ìˆì§€ ì•Šë‹¤ë©´ ê¸°ë³¸ ìƒì„±ìë¥¼ ì‚¬ìš©í•¨
 		
-		// °´Ã¼·Î ¼±¾ğÇÑ Å¬·¡½º°¡ °¡Áö°í ÀÖ´Â
-		// ÀÚ¿ø(ÇÊµå, ¸Ş¼Òµå) È°¿ë
-		// People Å¬·¡½º°¡ °¡Áö°í ÀÖ´Â ÇÊµå¿¡ °ª ÀúÀå ¹× Ãâ·Â
+		// ê°ì²´ë¡œ ì„ ì–¸í•œ í´ë˜ìŠ¤ê°€ ê°€ì§€ê³  ìˆëŠ”
+		// ìì›(í•„ë“œ, ë©”ì†Œë“œ) í™œìš©
+		// People í´ë˜ìŠ¤ê°€ ê°€ì§€ê³  ìˆëŠ” í•„ë“œì— ê°’ ì €ì¥ ë° ì¶œë ¥
 		
-		p.name = "ÀÌ¸§1";
+		p.name = "ì´ë¦„1";
 		p.age = 10;
 		System.out.println(p.name);
 		System.out.println(p.age);
 		System.out.println(p.nation);
-		p.nation = "¹Ì±¹";
+		p.nation = "ë¯¸êµ­";
 		System.out.println(p.nation);
 		
 		People p1 = new People();
-		p1.name = "ÀÌ¸§2";
+		p1.name = "ì´ë¦„2";
 		System.out.println(p1.name);
 		
 		People p2 = new People();
-		p2.name = "ÀÌ¸§3";
+		p2.name = "ì´ë¦„3";
 		System.out.println(p2.name);
 		
-		//¸Å°³º¯¼ö°¡ ÀÖ´Â »ı¼ºÀÚ¸¦ ÀÌ¿ëÇÑ °´Ã¼(ÀÎ½ºÅÏ½º) »ı¼º
+		//ë§¤ê°œë³€ìˆ˜ê°€ ìˆëŠ” ìƒì„±ìë¥¼ ì´ìš©í•œ ê°ì²´(ì¸ìŠ¤í„´ìŠ¤) ìƒì„±
 		
-		People p3 = new People("ÀÌ¸§4", 10);
+		People p3 = new People("ì´ë¦„4", 10);
 		System.out.println(p3.name);
 		System.out.println(p3.age);
 		System.out.println(p3.nation);
-		p3.nation= "Ä³³ª´Ù";
+		p3.nation= "ìºë‚˜ë‹¤";
 		System.out.println(p3.nation);
-		p3.name = "ÀÌ¸§4º¯°æ";
+		p3.name = "ì´ë¦„4ë³€ê²½";
 		p3.age = 100;
 		System.out.println(p3.name);
 		System.out.println(p3.age);

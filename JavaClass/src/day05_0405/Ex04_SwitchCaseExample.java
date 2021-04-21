@@ -9,24 +9,24 @@ public class Ex04_SwitchCaseExample {
 		Scanner scan = new Scanner(System.in);
 		
 		String word="";
-		System.out.print("´Ü¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë‹¨ì–´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		word = scan.nextLine();
 		
 		switch (word) {			
 			case "desk":
-				System.out.println("Ã¥»óÀÔ´Ï´Ù.");
+				System.out.println("ì±…ìƒì…ë‹ˆë‹¤.");
 				break;
 			case "chair":
-				System.out.println("ÀÇÀÚÀÔ´Ï´Ù.");
+				System.out.println("ì˜ìì…ë‹ˆë‹¤.");
 				break;
 			case "monitor":
-				System.out.println("¸ğ´ÏÅÍÀÔ´Ï´Ù.");
+				System.out.println("ëª¨ë‹ˆí„°ì…ë‹ˆë‹¤.");
 				break;
 			case "mouse":
-				System.out.println("¸¶¿ì½ºÀÔ´Ï´Ù.");
+				System.out.println("ë§ˆìš°ìŠ¤ì…ë‹ˆë‹¤.");
 				break;
 			default:
-				System.out.println("»çÀü¿¡ ¾ø´Â ´Ü¾îÀÔ´Ï´Ù.");
+				System.out.println("ì‚¬ì „ì— ì—†ëŠ” ë‹¨ì–´ì…ë‹ˆë‹¤.");
 				break;			
 		}
 

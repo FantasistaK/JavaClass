@@ -6,35 +6,35 @@ public class Ex01_IfExample {
 
 	public static void main(String[] args) {
 		/*
-		 * ÇÕ°Ý ºÒÇÕ°Ý Ãâ·Â ÇÁ·Î±×·¥(ÁßÃ¸ if¹® È°¿ë)
-		 * 1. ÀÔ·Â°ª : ÇÐ³â, Á¡¼ö
-		 * 2. Ãâ·Â Á¶°Ç
-		 * 		- 1~3ÇÐ³âÀº Á¡¼ö°¡ 60Á¡ ÀÌ»óÀÌ¾î¾ß ÇÕ°ÝÀÌ¶ó°í Ãâ·Â
-		 * 		- 4ÇÐ³âÀº 70Á¡ ÀÌ»óÀÌ¾î¾ß ÇÕ°ÝÀÌ¶ó°í Ãâ·Â
+		 * í•©ê²© ë¶ˆí•©ê²© ì¶œë ¥ í”„ë¡œê·¸ëž¨(ì¤‘ì²© ifë¬¸ í™œìš©)
+		 * 1. ìž…ë ¥ê°’ : í•™ë…„, ì ìˆ˜
+		 * 2. ì¶œë ¥ ì¡°ê±´
+		 * 		- 1~3í•™ë…„ì€ ì ìˆ˜ê°€ 60ì  ì´ìƒì´ì–´ì•¼ í•©ê²©ì´ë¼ê³  ì¶œë ¥
+		 * 		- 4í•™ë…„ì€ 70ì  ì´ìƒì´ì–´ì•¼ í•©ê²©ì´ë¼ê³  ì¶œë ¥
 		 */
 		
 		Scanner scan = new Scanner(System.in);
 		
 		int level=0, score=0;
-		System.out.print("ÇÐ³âÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("í•™ë…„ì„ ìž…ë ¥í•˜ì„¸ìš” : ");
 		level = scan.nextInt();
-		System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ");
 		score = scan.nextInt();
 		
 		if (level >=1 && level <= 3 ) {
 			if (score >= 60) {
-				System.out.println("ÇÕ°Ý");
+				System.out.println("í•©ê²©");
 			} else {
-				System.out.println("ºÒÇÕ°Ý");
+				System.out.println("ë¶ˆí•©ê²©");
 			}
 		} else if (level == 4){
 			if (score >=70) {
-				System.out.println("ÇÕ°Ý");
+				System.out.println("í•©ê²©");
 			} else {
-				System.out.println("ºÒÇÕ°Ý");
+				System.out.println("ë¶ˆí•©ê²©");
 			}
 		} else {
-			System.out.println("´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ë‹¤ì‹œ ìž…ë ¥í•˜ì„¸ìš”");
 		}
 		
 	}

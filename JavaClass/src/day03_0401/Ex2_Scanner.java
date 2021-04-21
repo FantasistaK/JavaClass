@@ -1,37 +1,37 @@
 package day03_0401;
 
-// ¶óÀÌºê·¯¸®¸¦ »ç¿ëÇÒ ¶§
+// ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ì‚¬ìš©í•  ë•Œ
 import java.util.Scanner;
 
 public class Ex2_Scanner {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// ½ºÄ³³Ê ±â´ÉÀ» »ç¿ëÇÏ±â À§ÇÑ ½ºÄ³³Ê °´Ã¼ ¼±¾ğ
+		// ìŠ¤ìºë„ˆ ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ê¸° ìœ„í•œ ìŠ¤ìºë„ˆ ê°ì²´ ì„ ì–¸
 		Scanner scan = new Scanner(System.in);
 //		Scanner sc = new Scanner(System.in);
-		String name = "ÃÊ±â°ª", adress = "ÁÖ¼ÒÃÊ±â°ª";
+		String name = "ì´ˆê¸°ê°’", adress = "ì£¼ì†Œì´ˆê¸°ê°’";
 		int age = 10;
-//		System.out.println("½ºÄ³³Ê ÀÔ·ÂÀü name : "+name);
+//		System.out.println("ìŠ¤ìºë„ˆ ì…ë ¥ì „ name : "+name);
 		
-		System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
-		name = scan.next(); // ½ºÄ³³Ê Å¬·¡½º¿¡¼­ Á¦°øÇÏ´Â next() ¸Ş¼Òµå¸¦ ÀÌ¿ëÇÏ¿©
-							// String °ªÀ» ÀÔ·Â¹ŞÀ» ¼ö ÀÖÀ½
-							// ÀÌ ÀÔ·ÂÇÑ °ªÀ» name º¯¼ö¿¡ ´ëÀÔÇÏ´Â ¹®Àå
+		System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
+		name = scan.next(); // ìŠ¤ìºë„ˆ í´ë˜ìŠ¤ì—ì„œ ì œê³µí•˜ëŠ” next() ë©”ì†Œë“œë¥¼ ì´ìš©í•˜ì—¬
+							// String ê°’ì„ ì…ë ¥ë°›ì„ ìˆ˜ ìˆìŒ
+							// ì´ ì…ë ¥í•œ ê°’ì„ name ë³€ìˆ˜ì— ëŒ€ì…í•˜ëŠ” ë¬¸ì¥
 		
-		// address, age¿¡µµ ½ºÄ³³Ê·Î °ªÀ» ¹Ş¾Æ¼­ ÀúÀåÇÏ°í ÀúÀåµÈ °ªÀ» Ãâ·ÂÇÏ¼¼¿ä
-		// Á¤¼ö°ªÀ» ¹ŞÀ» ¶§´Â nextInt() ¸Ş¼Òµå¸¦ »ç¿ë
+		// address, ageì—ë„ ìŠ¤ìºë„ˆë¡œ ê°’ì„ ë°›ì•„ì„œ ì €ì¥í•˜ê³  ì €ì¥ëœ ê°’ì„ ì¶œë ¥í•˜ì„¸ìš”
+		// ì •ìˆ˜ê°’ì„ ë°›ì„ ë•ŒëŠ” nextInt() ë©”ì†Œë“œë¥¼ ì‚¬ìš©
 		
 		
-		System.out.print("ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		scan.nextLine();
 		adress = scan.nextLine();
-		System.out.print("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		age = scan.nextInt();
 
-		System.out.println("ÀÌ¸§ : "+name);
-		System.out.println("ÁÖ¼Ò : "+adress);
-		System.out.println("³ªÀÌ : "+age);
+		System.out.println("ì´ë¦„ : "+name);
+		System.out.println("ì£¼ì†Œ : "+adress);
+		System.out.println("ë‚˜ì´ : "+age);
 
 	}
 

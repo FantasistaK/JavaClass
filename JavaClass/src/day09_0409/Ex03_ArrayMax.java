@@ -6,8 +6,8 @@ public class Ex03_ArrayMax {
 
 	public static void main(String[] args) {
 		/*
-		 * Å©±â°¡ 5ÀÎ Á¤¼öÇü ¹è¿­¿¡ ½ºÄ³³Ê·Î °ªÀ» ÀÔ·Â¹Ş¾Æ
-		 * ÀÔ·ÂµÈ °ª Áß¿¡¼­ °¡Àå Å« °ª Ãâ·ÂÇÏ±â
+		 * í¬ê¸°ê°€ 5ì¸ ì •ìˆ˜í˜• ë°°ì—´ì— ìŠ¤ìºë„ˆë¡œ ê°’ì„ ì…ë ¥ë°›ì•„
+		 * ì…ë ¥ëœ ê°’ ì¤‘ì—ì„œ ê°€ì¥ í° ê°’ ì¶œë ¥í•˜ê¸°
 		 * {3, 1, 5, 2, 4}
 		 */
 		
@@ -16,12 +16,12 @@ public class Ex03_ArrayMax {
 		int max = 0;
 		
 		for (int i=0;i<num.length;i++) {
-			System.out.print((i+1)+"¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+			System.out.print((i+1)+"ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 			num[i]=scan.nextInt();
 			if (max<num[i])
 				max = num[i];
 		}
-		System.out.println("ÃÖ´ë°ªÀº "+max+"ÀÔ´Ï´Ù.");
+		System.out.println("ìµœëŒ€ê°’ì€ "+max+"ì…ë‹ˆë‹¤.");
 		
 	}
 

@@ -1,3 +1,4 @@
+
 package day03_0401;
 
 import java.util.Scanner;
@@ -9,19 +10,19 @@ public class Ex7_Ifexample {
 		int num1;
 		Scanner scan = new Scanner(System.in);
 		
-	    System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+	    System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 	    num1 = scan.nextInt();
 	    
 	    if (num1 >= 90) {
-	    	System.out.println("AÇĞÁ¡ÀÔ´Ï´Ù.");
+	    	System.out.println("Aí•™ì ì…ë‹ˆë‹¤.");
 	    } else if (num1 >= 80) {
-	    	System.out.println("BÇĞÁ¡ÀÔ´Ï´Ù.");
+	    	System.out.println("Bí•™ì ì…ë‹ˆë‹¤.");
 	    } else if (num1 >= 70) {
-	    	System.out.println("CÇĞÁ¡ÀÔ´Ï´Ù.");
+	    	System.out.println("Cí•™ì ì…ë‹ˆë‹¤.");
 	    } else if (num1 >= 60) {
-	    	System.out.println("DÇĞÁ¡ÀÔ´Ï´Ù.");
+	    	System.out.println("Dí•™ì ì…ë‹ˆë‹¤.");
 	    } else {
-	    	System.out.println("FÇĞÁ¡ÀÔ´Ï´Ù.");
+	    	System.out.println("Fí•™ì ì…ë‹ˆë‹¤.");
 	    }
 		
 	}

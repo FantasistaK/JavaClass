@@ -10,7 +10,7 @@ public class BoardService {
 		
 		if (boardList.size()>0)
 			for (int i = 0; i < boardList.size(); i++)
-				System.out.println(boardList.get(i));
+				System.out.println(boardList.get(i)); // BoardDTO에 toString 메소드 있는지 확인
 		else
 			System.out.println("글이 존재하지 않습니다.");
 		
@@ -68,7 +68,7 @@ public class BoardService {
 		return boardList;
 		
 	}
-
+	
 	public List<BoardDTO> delete(List<BoardDTO> boardList) {
 		
 		System.out.print("글번호를 입력하세요 : ");
@@ -95,5 +95,14 @@ public class BoardService {
 		return boardList;
 		
 	}
+	
+	// 게시판??
+	/*
+	 * CRUD
+	 * Create
+	 * Read
+	 * Update
+	 * Delete
+	 */
 
 }

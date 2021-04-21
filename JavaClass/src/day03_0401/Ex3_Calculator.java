@@ -1,3 +1,4 @@
+
 package day03_0401;
 
 import java.util.Scanner;
@@ -9,14 +10,14 @@ public class Ex3_Calculator {
 		int num1=0, num2=0, sum=0;
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Ã¹¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì²«ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		num1 = scan.nextInt();
-		System.out.print("µÎ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë‘ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		num2 = scan.nextInt();
 		
 		sum = num1 + num2;
-		System.out.println("µ¡¼À °á°ú´Â " + sum + "ÀÔ´Ï´Ù.");
-		System.out.println("µ¡¼À °á°ú´Â " + num1 + num2 + "ÀÔ´Ï´Ù.");
+		System.out.println("ë§ì…ˆ ê²°ê³¼ëŠ” " + sum + "ì…ë‹ˆë‹¤.");
+		System.out.println("ë§ì…ˆ ê²°ê³¼ëŠ” " + num1 + num2 + "ì…ë‹ˆë‹¤.");
 
 	}
 

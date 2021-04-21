@@ -13,9 +13,9 @@ public class CalMain {
 		while (run) {
 		
 			System.out.println("---------------------------------------------");
-			System.out.println(" 1. µ¡¼À | 2. »¬¼À | 3. °ö¼À | 4. ³ª´°¼À | 5. Á¾·á");
+			System.out.println(" 1. ë§ì…ˆ | 2. ëº„ì…ˆ | 3. ê³±ì…ˆ | 4. ë‚˜ëˆ—ì…ˆ | 5. ì¢…ë£Œ");
 			System.out.println("---------------------------------------------");
-			System.out.print("¼±ÅÃ > ");
+			System.out.print("ì„ íƒ > ");
 			int select = sc.nextInt();
 			
 			Cal cal = new Cal();
@@ -29,9 +29,9 @@ public class CalMain {
 				
 			case 2:
 				
-				System.out.print("Ã¹¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä > ");
+				System.out.print("ì²«ë²ˆì§¸ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš” > ");
 				num1 = sc.nextInt();
-				System.out.print("µÎ¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä > ");
+				System.out.print("ë‘ë²ˆì§¸ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš” > ");
 				num2 = sc.nextInt();
 				
 				cal.sub(num1, num2);
@@ -39,30 +39,29 @@ public class CalMain {
 				
 			case 3:
 				
-				System.out.print("Ã¹¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä > ");
+				System.out.print("ì²«ë²ˆì§¸ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš” > ");
 				num1 = sc.nextInt();
-				System.out.print("µÎ¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä > ");
+				System.out.print("ë‘ë²ˆì§¸ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš” > ");
 				num2 = sc.nextInt();
 				
-				System.out.println("°á°ú > "+cal.mul(num1, num2));
+				System.out.println("ê²°ê³¼ > "+cal.mul(num1, num2));
 				break;
 				
 			case 4:
 				
-				System.out.println("°á°ú > "+cal.div());
+				System.out.println("ê²°ê³¼ > "+cal.div());
 				break;
 				
 			case 5:
 				
-				System.out.println("°è»ê±â¸¦ Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ê³„ì‚°ê¸°ë¥¼ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				run = false;
 				break;
 			
 			}
 		
 		}
-		
-				
+			
 	}
 
 }

@@ -4,25 +4,25 @@ public class Ex03_SwitchCase {
 
 	public static void main(String[] args) {
 		/*
-		 * Á¶°Ç¹®
+		 * ì¡°ê±´ë¬¸
 		 * switch case 
 		 */
 
 	int num = 10;
-	String str = "°¡";
+	String str = "ê°€";
 	
 	switch(str) {
 	
-		case "°¡":
-			System.out.println("num°ªÀÌ 0 ÀÌ³×¿ä");
-			break;  // ½ÇÇàÀÌ ³¡³ª¸é switch case ¹®À» ºüÁ®³ª°¡¶ó´Â ¹®Àå
+		case "ê°€":
+			System.out.println("numê°’ì´ 0 ì´ë„¤ìš”");
+			break;  // ì‹¤í–‰ì´ ëë‚˜ë©´ switch case ë¬¸ì„ ë¹ ì ¸ë‚˜ê°€ë¼ëŠ” ë¬¸ì¥
 		
-		case "³ª":
-			System.out.println("num°ªÀÌ 1 ÀÌ³×¿ä");
+		case "ë‚˜":
+			System.out.println("numê°’ì´ 1 ì´ë„¤ìš”");
 			break;
 		
 		default:
-			System.out.println("case¿¡¼­ ÁöÁ¤ÇÑ °ªÀÌ ¾Æ´Ò ¶§ ½ÇÇàµË´Ï´Ù.");
+			System.out.println("caseì—ì„œ ì§€ì •í•œ ê°’ì´ ì•„ë‹ ë•Œ ì‹¤í–‰ë©ë‹ˆë‹¤.");
 			break;
 		
 	}

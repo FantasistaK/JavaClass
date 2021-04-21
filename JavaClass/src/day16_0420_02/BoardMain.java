@@ -21,7 +21,7 @@ public class BoardMain {
 		do {
 
 			System.out.println("-----------------------------------------------------------");
-			System.out.println("1. 글쓰기 | 2. 전체글목록 | 3. 글조회 | 4. 글수정 | 5. 글삭제 | 6. 종료");
+			System.out.println("1. 글쓰기 | 2. 글목록 | 3. 글조회 | 4. 글수정 | 5. 글삭제 | 6. 종료");
 			System.out.println("-----------------------------------------------------------");
 			System.out.print("선택 > ");
 			int select = sc.nextInt();
@@ -41,19 +41,18 @@ public class BoardMain {
 				writingNumber = boardList.size()+1;
 				
 				board = new BoardDTO(writingNumber, title, password, writer, contents);
-
 				boardList.add(board);
 
 				break;
 				
 			case 2:
-				
+				// 목록 출력을 위한 메소드 호출(단순 출력만 하기 때문에 리턴은 필요 없음)
 				bs.boardList(boardList);
 				
 				break;
 				
 			case 3:
-				
+				// 글 조회
 				bs.writingInfo(boardList);
 				
 				break;

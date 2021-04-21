@@ -3,22 +3,22 @@ package day07_0407;
 public class Ex01_ForEx {
 
 	public static void main(String[] args) {
-		// 10ºÎÅÍ 1±îÁö Ãâ·ÂÇÏ±â
+		// 10ë¶€í„° 1ê¹Œì§€ ì¶œë ¥í•˜ê¸°
 		for (int i=10; i>=1; i--) {
 			System.out.println(i);
 		}
 
-		// ÁßÃ¸ for¹®
-		System.out.println("i for¹® ½ÃÀÛ");
+		// ì¤‘ì²© forë¬¸
+		System.out.println("i forë¬¸ ì‹œìž‘");
 		for(int i=1; i<=2; i++) {
-			System.out.println("j for¹® ½ÃÀÛ");
+			System.out.println("j forë¬¸ ì‹œìž‘");
 			for(int j=1; j<=3; j++) {
-				System.out.print("i°ª : "+i);
-				System.out.println(", j°ª : "+j);
+				System.out.print("iê°’ : "+i);
+				System.out.println(", jê°’ : "+j);
 			}
-			System.out.println("j for¹® ³¡");
+			System.out.println("j forë¬¸ ë");
 		}
-		System.out.println("i for¹® ³¡");
+		System.out.println("i forë¬¸ ë");
 		
 	}
 

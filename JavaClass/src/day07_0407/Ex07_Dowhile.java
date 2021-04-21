@@ -4,23 +4,23 @@ public class Ex07_Dowhile {
 
 	public static void main(String[] args) {
 		/* 
-		 * do while¹®
-		 * while¹®Àº ¹Ýº»Á¶°ÇÀÌ ¸ÂÁö ¾ÊÀ¸¸é ¹Ýº¹¹® ½ÇÇàÀ» ÀüÇô ÇÏÁö ¾ÊÀ½
-		 * do while¹®Àº Á¶°ÇÀÌ ¸Âµç ¾È¸Âµç ÇÑ¹øÀº ½ÇÇàÇÏ°í ¹Ýº¹Á¶°ÇÀ» µûÁü
+		 * do whileë¬¸
+		 * whileë¬¸ì€ ë°˜ë³¸ì¡°ê±´ì´ ë§žì§€ ì•Šìœ¼ë©´ ë°˜ë³µë¬¸ ì‹¤í–‰ì„ ì „í˜€ í•˜ì§€ ì•ŠìŒ
+		 * do whileë¬¸ì€ ì¡°ê±´ì´ ë§žë“  ì•ˆë§žë“  í•œë²ˆì€ ì‹¤í–‰í•˜ê³  ë°˜ë³µì¡°ê±´ì„ ë”°ì§
 		 * 
-		 * while(¹Ýº¹Á¶°Ç) {
+		 * while(ë°˜ë³µì¡°ê±´) {
 		 * 
 		 * }
 		 * 
 		 * do {
-		 * 	 ¹Ýº¹½ÇÇà³»¿ë
+		 * 	 ë°˜ë³µì‹¤í–‰ë‚´ìš©
 		 * 
-		 * } while(¹Ýº¹Á¶°Ç);
+		 * } while(ë°˜ë³µì¡°ê±´);
 		 * 
 		 */
 		int i = 10;
 		do {
-			System.out.println("¹Ýº¹¹® ³»ºÎ");
+			System.out.println("ë°˜ë³µë¬¸ ë‚´ë¶€");
 		} while(i<=5);
 	}
 

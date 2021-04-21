@@ -3,7 +3,7 @@ package day07_0407;
 public class Ex03_Star {
 
 	public static void main(String[] args) {
-		// º°Âï±â
+		// ë³„ì°ê¸°
 		// *
 		// **
 		// ***

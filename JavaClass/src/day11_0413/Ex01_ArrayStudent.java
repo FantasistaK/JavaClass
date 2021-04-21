@@ -16,16 +16,16 @@ public class Ex01_ArrayStudent {
 		do {
 			
 			System.out.println("---------------------------------------------------");
-			System.out.println("1. ÇÐ»ý¼ö | 2. Á¡¼öÀÔ·Â | 3. Á¡¼ö¸®½ºÆ® | 4. ºÐ¼® | 5. Á¾·á");
+			System.out.println("1. í•™ìƒìˆ˜ | 2. ì ìˆ˜ìž…ë ¥ | 3. ì ìˆ˜ë¦¬ìŠ¤íŠ¸ | 4. ë¶„ì„ | 5. ì¢…ë£Œ");
 			System.out.println("---------------------------------------------------");
-			System.out.print("¼±ÅÃ> ");
+			System.out.print("ì„ íƒ> ");
 			int menu = sc.nextInt();
 							
 			switch (menu) {
 			
 				case 1:
 					
-					System.out.print("ÇÐ»ý¼ö> ");
+					System.out.print("í•™ìƒìˆ˜> ");
 					student = sc.nextInt();
 					
 					score = new int[student];
@@ -37,7 +37,7 @@ public class Ex01_ArrayStudent {
 					
 					if (student!=0) {
 						for (int i=0; i<score.length ; i++) {
-							System.out.print((i+1)+"¹øÂ° ÇÐ»ýÁ¡¼ö : ");
+							System.out.print((i+1)+"ë²ˆì§¸ í•™ìƒì ìˆ˜ : ");
 							score[i]=sc.nextInt();
 							sort[i]=score[i];
 							sum+=score[i];
@@ -45,7 +45,7 @@ public class Ex01_ArrayStudent {
 								max=score[i];
 						}
 					} else {
-						System.out.println("ÇÐ»ý¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä");
+						System.out.println("í•™ìƒìˆ˜ë¥¼ ìž…ë ¥ í•˜ì„¸ìš”");
 					}
 					break;
 					
@@ -53,18 +53,18 @@ public class Ex01_ArrayStudent {
 					
 					if (student!=0) {
 						for (int i=0; i<score.length ; i++) {
-							System.out.println((i+1)+"¹øÂ° ÇÐ»ýÁ¡¼ö : "+score[i]);
+							System.out.println((i+1)+"ë²ˆì§¸ í•™ìƒì ìˆ˜ : "+score[i]);
 						}
 					} else {
-						System.out.println("ÇÐ»ý¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä");
+						System.out.println("í•™ìƒìˆ˜ë¥¼ ìž…ë ¥ í•˜ì„¸ìš”");
 					}
 					break;
 					
 				case 4:
 					
 					if (student!=0) {
-						System.out.println("ÃÖ°íÁ¡¼ö : "+max);
-						System.out.println("Æò±ÕÁ¡¼ö : "+(double)(sum/student));
+						System.out.println("ìµœê³ ì ìˆ˜ : "+max);
+						System.out.println("í‰ê· ì ìˆ˜ : "+(double)(sum/student));
 						for (int i=0;i<score.length;i++ ) {
 							for (int j=i+1;j<score.length;j++) {
 								if(sort[i]<sort[j]) {
@@ -78,19 +78,19 @@ public class Ex01_ArrayStudent {
 							System.out.println(sort[i]);
 						}
 					} else {
-						System.out.println("ÇÐ»ý¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä");
+						System.out.println("í•™ìƒìˆ˜ë¥¼ ìž…ë ¥ í•˜ì„¸ìš”");
 					}
 					break;
 					
 				case 5:
 					
-					System.out.println("ÇÁ·Î±×·¥À» Á¾·á ÇÕ´Ï´Ù.");
+					System.out.println("í”„ë¡œê·¸ëž¨ì„ ì¢…ë£Œ í•©ë‹ˆë‹¤.");
 					run = false;
 					break;
 					
 				default :
 					
-					System.out.println("Àß¸ø ÀÔ·Â ÇÏ¼Ì½À´Ï´Ù.");
+					System.out.println("ìž˜ëª» ìž…ë ¥ í•˜ì…¨ìŠµë‹ˆë‹¤.");
 					break;
 			
 			}

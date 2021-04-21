@@ -6,9 +6,9 @@ public class Ex02_ArrayEx {
 
 	public static void main(String[] args) {
 		/*
-		 * Å©±â°¡ 3ÀÎ Á¤¼öÇü ¹è¿­À» ¼±¾ğÇÏ°í
-		 * ½ºÄ³³Ê¸¦ ÀÌ¿ëÇØ ¹è¿­¿¡ °ªÀ» ÀúÀåÇÑ ´ÙÀ½
-		 * ÀÔ·ÂµÈ °ªÀÇ ÃÑÇÕ, Æò±ÕÀ» °è»êÇÏ¼¼¿ä.
+		 * í¬ê¸°ê°€ 3ì¸ ì •ìˆ˜í˜• ë°°ì—´ì„ ì„ ì–¸í•˜ê³ 
+		 * ìŠ¤ìºë„ˆë¥¼ ì´ìš©í•´ ë°°ì—´ì— ê°’ì„ ì €ì¥í•œ ë‹¤ìŒ
+		 * ì…ë ¥ëœ ê°’ì˜ ì´í•©, í‰ê· ì„ ê³„ì‚°í•˜ì„¸ìš”.
 		 */
 		
 		Scanner scan = new Scanner(System.in);
@@ -18,14 +18,14 @@ public class Ex02_ArrayEx {
 		double avg = 0;
 				
 		for (int i=0;i<3;i++) {
-			System.out.print((i+1)+"¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+			System.out.print((i+1)+"ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 			num[i] = scan.nextInt();
 			sum += num[i];
 		}
 		
-		System.out.println("ÃÑÇÕ : "+sum);
+		System.out.println("ì´í•© : "+sum);
 		avg = (double)sum/num.length;
-		System.out.println("Æò±Õ : "+avg);
+		System.out.println("í‰ê·  : "+avg);
 
 	}
 

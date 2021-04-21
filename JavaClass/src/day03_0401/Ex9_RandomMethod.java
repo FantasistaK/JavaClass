@@ -3,18 +3,18 @@ package day03_0401;
 public class Ex9_RandomMethod {
 
 	public static void main(String[] args) {
-		// Random ¸Ş¼Òµå
-		// Æ¯Á¤ ¹üÀ§ ³»¿¡¼­ ¼ıÀÚ¸¦ ÇÏ³ª Ãâ·ÂÇØÁÖ´Â ¸Ş¼Òµå
-		// 1~10 »çÀÌÀÇ ¼ıÀÚ ÇÏ³ª¸¦ ¹«ÀÛÀ§·Î ¹ß»ı
+		// Random ë©”ì†Œë“œ
+		// íŠ¹ì • ë²”ìœ„ ë‚´ì—ì„œ ìˆ«ìë¥¼ í•˜ë‚˜ ì¶œë ¥í•´ì£¼ëŠ” ë©”ì†Œë“œ
+		// 1~10 ì‚¬ì´ì˜ ìˆ«ì í•˜ë‚˜ë¥¼ ë¬´ì‘ìœ„ë¡œ ë°œìƒ
 		/* (int)(Math.random() * 10) + 1
-		 * random() 0º¸´Ù Å©°Å³ª °°°í 1.0º¸´Ù ÀÛÀº ¼ıÀÚ¸¦ ¹ß»ı½ÃÅ´
+		 * random() 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ê³  1.0ë³´ë‹¤ ì‘ì€ ìˆ«ìë¥¼ ë°œìƒì‹œí‚´
 		 */
 		System.out.println(Math.random());
 		System.out.println((Math.random()*10));
-		System.out.println((int)(Math.random()*10)); // °­Á¦ Çüº¯È¯
-		System.out.println(((int)(Math.random()*10)+1)); // °­Á¦ Çüº¯È¯
+		System.out.println((int)(Math.random()*10)); // ê°•ì œ í˜•ë³€í™˜
+		System.out.println(((int)(Math.random()*10)+1)); // ê°•ì œ í˜•ë³€í™˜
 		
-		System.out.println(((int)(Math.random()*45)+1)); // 1~45 ¼ıÀÚÁß ÇÏ³ª
+		System.out.println(((int)(Math.random()*45)+1)); // 1~45 ìˆ«ìì¤‘ í•˜ë‚˜
 	}
 
 }

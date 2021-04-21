@@ -6,15 +6,15 @@ public class BoardMain {
 		
 		Board b1 = new Board();
 		
-		b1.boardWrite(1,"Á¦¸ñ1","ÀÛ¼ºÀÚ1","³»¿ë1");
+		b1.boardWrite(1,"ì œëª©1","ì‘ì„±ì1","ë‚´ìš©1");
 		b1.boardView();
-		b1.boardUpdate("Á¦¸ñ1-1", "³»¿ë1-1");
+		b1.boardUpdate("ì œëª©1-1", "ë‚´ìš©1-1");
 		b1.boardView();
 		
-		Board b2 = new Board(2, "Á¦¸ñ2", "ÀÛ¼ºÀÚ2", "³»¿ë2");
+		Board b2 = new Board(2, "ì œëª©2", "ì‘ì„±ì2", "ë‚´ìš©2");
 		
 		b2.boardView();
-		b2.boardUpdate("Á¦¸ñ2-1", "³»¿ë2-1");
+		b2.boardUpdate("ì œëª©2-1", "ë‚´ìš©2-1");
 		b2.boardView();
 
 	}

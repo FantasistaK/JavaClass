@@ -3,10 +3,10 @@ package day07_0407;
 public class Ex02_MultiTable {
 
 	public static void main(String[] args) {
-		// ±¸±¸´Ü Ãâ·ÂÇÏ±â
+		// êµ¬êµ¬ë‹¨ ì¶œë ¥í•˜ê¸°
 
-		for (int i = 2; i <= 9; i++) {  //¸î´ÜÀÎÁö¸¦ À§ÇØ
-			for (int j = 1; j <= 9; j++) {  //µÚ¿¡ °öÇØÁö´Â ¼ýÀÚ¸¦ À§ÇØ
+		for (int i = 2; i <= 9; i++) {  //ëª‡ë‹¨ì¸ì§€ë¥¼ ìœ„í•´
+			for (int j = 1; j <= 9; j++) {  //ë’¤ì— ê³±í•´ì§€ëŠ” ìˆ«ìžë¥¼ ìœ„í•´
 				System.out.print(i + "x" + j + "=" + (i * j));
 				System.out.print("\t");  //tab
 			}

@@ -4,8 +4,8 @@ public class Ex06_While {
 
 	public static void main(String[] args) {
 		/*
-		 * while(¹İº¹Á¶°Ç) {
-		 * 		¹İº¹½ÇÇà³»¿ë
+		 * while(ë°˜ë³µì¡°ê±´) {
+		 * 		ë°˜ë³µì‹¤í–‰ë‚´ìš©
 		 * }
 		 */
 		
@@ -17,16 +17,16 @@ public class Ex06_While {
 			num=0;
 		}
 		
-		System.out.println("while¹® ³¡");
+		System.out.println("whileë¬¸ ë");
 		System.out.println(i);
 		System.out.println(num);
 		
 		boolean run = true;
 		while(run) {
-			System.out.println("¹«ÇÑ¹İº¹µË´Ï´Ù.");
+			System.out.println("ë¬´í•œë°˜ë³µë©ë‹ˆë‹¤.");
 			i++;
 			if(i==100 ) {
-				System.out.println("¹«ÇÑ¹İº¹ Á¾·á");
+				System.out.println("ë¬´í•œë°˜ë³µ ì¢…ë£Œ");
 				run=false;
 			}
 		}

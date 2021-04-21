@@ -4,41 +4,41 @@ public class Ex01_Array {
 
 	public static void main(String[] args) {
 		/*
-		 * ¹è¿­(Array) : °°Àº Å¸ÀÔÀÇ µ¥ÀÌÅÍ¸¦ ÇÏ³ªÀÇ º¯¼ö¿¡ ¿©·¯ °³ ´ãÀ» ¼ö ÀÖ°Ô ÇÔ.
+		 * ë°°ì—´(Array) : ê°™ì€ íƒ€ì…ì˜ ë°ì´í„°ë¥¼ í•˜ë‚˜ì˜ ë³€ìˆ˜ì— ì—¬ëŸ¬ ê°œ ë‹´ì„ ìˆ˜ ìˆê²Œ í•¨.
 		 * 
 		 * 
 		 */
 		
 		int num = 0;
-		// Á¤¼ö Å¸ÀÔÀÇ number ¶ó´Â ÀÌ¸§ÀÇ ¹è¿­ º¯¼ö ¼±¾ğ
+		// ì •ìˆ˜ íƒ€ì…ì˜ number ë¼ëŠ” ì´ë¦„ì˜ ë°°ì—´ ë³€ìˆ˜ ì„ ì–¸
 		int[] number;
 		int number1[];
-		// ¹è¿­ ¼±¾ğ°ú µ¿½Ã¿¡ ÃÊ±â°ª
+		// ë°°ì—´ ì„ ì–¸ê³¼ ë™ì‹œì— ì´ˆê¸°ê°’
 		int[] number2 = {1, 2, 3};
-		String[] strArray = {"°¡³ª´Ù¶ó", "abcd", "°¡1a2~!@"};
+		String[] strArray = {"ê°€ë‚˜ë‹¤ë¼", "abcd", "ê°€1a2~!@"};
 		
 		int[] number3 = {4,5,6,7,20,100};
-		// Æ¯Á¤ À§Ä¡ÀÇ °ª Ãâ·ÂÇÏ±â
-		// number3ÀÇ 7À» Ãâ·ÂÇÏ°í ½Í´Ù¸é
-		// 4¹øÂ° Ä­¿¡ ÀÖ´Â °ªÀ» Ãâ·ÂÇÑ´Ù´Â °Í
+		// íŠ¹ì • ìœ„ì¹˜ì˜ ê°’ ì¶œë ¥í•˜ê¸°
+		// number3ì˜ 7ì„ ì¶œë ¥í•˜ê³  ì‹¶ë‹¤ë©´
+		// 4ë²ˆì§¸ ì¹¸ì— ìˆëŠ” ê°’ì„ ì¶œë ¥í•œë‹¤ëŠ” ê²ƒ
 		System.out.println(number3[3]);
 		
-		// number2 º¯¼ö¿¡¼­ 2¸¦ Ãâ·ÂÇØº¸¼¼¿ä
+		// number2 ë³€ìˆ˜ì—ì„œ 2ë¥¼ ì¶œë ¥í•´ë³´ì„¸ìš”
 		System.out.println(number2[1]);
-		// number3ÀÇ 4¹ø ÀÎµ¦½º°ªÀ» 500À¸·Î º¯°æÇÏ±â
+		// number3ì˜ 4ë²ˆ ì¸ë±ìŠ¤ê°’ì„ 500ìœ¼ë¡œ ë³€ê²½í•˜ê¸°
 		System.out.println(number3[4]);
 		number3[4]=500;
 		System.out.println(number3[4]);
 		
-//		System.out.println(number3[6]);   ÀÎµ¦½º ÃÊ°ú ¿À·ù
+//		System.out.println(number3[6]);   ì¸ë±ìŠ¤ ì´ˆê³¼ ì˜¤ë¥˜
 		
-		// ¹è¿­ÀÌ¸§.length : ¹è¿­ÀÇ Å©±â¸¦ ¾Ë·ÁÁÜ
-		// ÀÎµ¦½º º¸´Ù 1 Å­
-		// number3ÀÇ Å©±â(°ª °¹¼ö) : 6
-		// number3ÀÇ ÀÎµ¦½º : 0~5
+		// ë°°ì—´ì´ë¦„.length : ë°°ì—´ì˜ í¬ê¸°ë¥¼ ì•Œë ¤ì¤Œ
+		// ì¸ë±ìŠ¤ ë³´ë‹¤ 1 í¼
+		// number3ì˜ í¬ê¸°(ê°’ ê°¯ìˆ˜) : 6
+		// number3ì˜ ì¸ë±ìŠ¤ : 0~5
 		System.out.println(number3.length);
 		
-		// for¹®À» ÀÌ¿ëÇÏ¿© ¹è¿­¿¡ ÀúÀåµÈ °ª Ãâ·ÂÇÏ±â
+		// forë¬¸ì„ ì´ìš©í•˜ì—¬ ë°°ì—´ì— ì €ì¥ëœ ê°’ ì¶œë ¥í•˜ê¸°
 		System.out.println(number3[0]);
 		System.out.println(number3[1]);
 		System.out.println(number3[2]);
@@ -50,23 +50,23 @@ public class Ex01_Array {
 			System.out.println(number3[i]);
 		}
 		
-		// number4 ¹è¿­ º¯¼ö¿¡ ÀúÀåµÈ °ªÀÇ ÃÑÇÕ°ú Æò±ÕÀ» Ãâ·Â
+		// number4 ë°°ì—´ ë³€ìˆ˜ì— ì €ì¥ëœ ê°’ì˜ ì´í•©ê³¼ í‰ê· ì„ ì¶œë ¥
 		int[] number4 = {1, 6, 10, 100};
 		int sum = 0;
 		for (int i = 0; i<number4.length ; i++) {
 			sum += number4[i];
 		}
-		System.out.println("ÇÕ°è : "+sum);
+		System.out.println("í•©ê³„ : "+sum);
 		double avg;
 		avg = (double)sum/number4.length;
-		System.out.println("Æò±Õ : "+avg);
+		System.out.println("í‰ê·  : "+avg);
 		
-		// ÃÊ±â°ªÀ» ÁÖÁö ¾Ê°í ¹è¿­ ¼±¾ğ
+		// ì´ˆê¸°ê°’ì„ ì£¼ì§€ ì•Šê³  ë°°ì—´ ì„ ì–¸
 		int[] number5 = null;
 		
 		number5 = new int[5];
 		
-		// Å©±â(length)°¡ 6ÀÎ Á¤¼öÇü ¹è¿­ ¼±¾ğ
+		// í¬ê¸°(length)ê°€ 6ì¸ ì •ìˆ˜í˜• ë°°ì—´ ì„ ì–¸
 		int[] number6 = new int[6];
 		
 		System.out.println(number6.length);

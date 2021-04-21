@@ -6,55 +6,54 @@ public class Ex4_If {
 
 	public static void main(String[] args) {
 		/*
-		 * Á¶°Ç¹® (if else, switch case)
+		 * ì¡°ê±´ë¬¸ (if else, switch case)
 		 * 
 		 * if(condition) {
-		 * 		Á¶°ÇÀÌ true¸é ½ÇÇà
+		 * 		ì¡°ê±´ì´ trueë©´ ì‹¤í–‰
 		 * } else {
-		 * 		Á¶°ÇÀÌ false¸é ½ÇÇà
+		 * 		ì¡°ê±´ì´ falseë©´ ì‹¤í–‰
 		 * }
-		 * condition ÀÚ¸®¿¡´Â ºñ±³¿¬»ê½Ä, ³í¸®¿¬»ê½Ä, boolean º¯¼ö, T, F µîÀÌ ¿Ã ¼ö ÀÖÀ½
+		 * condition ìë¦¬ì—ëŠ” ë¹„êµì—°ì‚°ì‹, ë…¼ë¦¬ì—°ì‚°ì‹, boolean ë³€ìˆ˜, T, F ë“±ì´ ì˜¬ ìˆ˜ ìˆìŒ
 		 */
 		boolean con;
 		con = false;
 		
-		System.out.println("if¹® ½ÃÀÛ");
+		System.out.println("ifë¬¸ ì‹œì‘");
 		if(con) {
-			System.out.println("if ºÎºĞ ½ÇÇàµÊ");
+			System.out.println("if ë¶€ë¶„ ì‹¤í–‰ë¨");
 		} else {
-			System.out.println("else ºÎºĞ ½ÇÇàµÊ");
+			System.out.println("else ë¶€ë¶„ ì‹¤í–‰ë¨");
 		}
-		System.out.println("if¹® ³¡");
+		System.out.println("ifë¬¸ ë");
 		
-		// ½ºÄ³³Ê·Î Á¤¼ö¸¦ ÀÔ·Â¹Ş¾Æ if else
+		// ìŠ¤ìºë„ˆë¡œ ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ if else
 		Scanner scan = new Scanner(System.in);
 		int num=0;
-		System.out.println("¼ıÀÚ ÀÔ·Â : ");
+		System.out.println("ìˆ«ì ì…ë ¥ : ");
 		num = scan.nextInt();
-		// ÀÔ·Â¹ŞÀº Á¤¼ö°¡ ¾ç¼ö¸é ¾ç¼ö, À½¼ö¸é À½¼ö¶ó°í Ãâ·Â(°á°ú 2°¡Áö)
-		// 0À» ÀÔ·ÂÇÏ¸é 0ÀÌ¶ó°í Ãâ·ÂÇÏ°í ½Í´Ù..(°á°ú 3°¡Áö) À§ÀÇ °æ¿ì¿¡¼­ Á¶°Ç Ãß°¡
-		// Á¶°ÇÀÌ 3°¡Áö ÀÌ»óÀÌ¶ó¸é if else·Î´Â ÆÇ´Ü ¾î·Æ´Ù
+		// ì…ë ¥ë°›ì€ ì •ìˆ˜ê°€ ì–‘ìˆ˜ë©´ ì–‘ìˆ˜, ìŒìˆ˜ë©´ ìŒìˆ˜ë¼ê³  ì¶œë ¥(ê²°ê³¼ 2ê°€ì§€)
+		// 0ì„ ì…ë ¥í•˜ë©´ 0ì´ë¼ê³  ì¶œë ¥í•˜ê³  ì‹¶ë‹¤..(ê²°ê³¼ 3ê°€ì§€) ìœ„ì˜ ê²½ìš°ì—ì„œ ì¡°ê±´ ì¶”ê°€
+		// ì¡°ê±´ì´ 3ê°€ì§€ ì´ìƒì´ë¼ë©´ if elseë¡œëŠ” íŒë‹¨ ì–´ë µë‹¤
 		
 		if(num>0) {
 			
-			System.out.println("¾ç¼öÀÔ´Ï´Ù.");
-			// ¾ç¼ö¿©¾ß ÀÌ ºÎºĞÀÌ ½ÇÇàµÇ±â ¶§¹®¿¡ ¿©±â¼­ Â¦¼ö, È¦¼ö¸¦ ÆÇ´ÜÇÏ¸é µÊ.
+			System.out.println("ì–‘ìˆ˜ì…ë‹ˆë‹¤.");
+			// ì–‘ìˆ˜ì—¬ì•¼ ì´ ë¶€ë¶„ì´ ì‹¤í–‰ë˜ê¸° ë•Œë¬¸ì— ì—¬ê¸°ì„œ ì§ìˆ˜, í™€ìˆ˜ë¥¼ íŒë‹¨í•˜ë©´ ë¨.
 			if (num % 2 == 0) {
-				System.out.println("Â¦¼öÀÔ´Ï´Ù.");
+				System.out.println("ì§ìˆ˜ì…ë‹ˆë‹¤.");
 			} else {
-				System.out.println("È¦¼öÀÔ´Ï´Ù.");
+				System.out.println("í™€ìˆ˜ì…ë‹ˆë‹¤.");
 			}
 			
-		} else if (num == 0){ // num¿¡ ÀúÀåµÈ °ªÀÌ¶û 0ÀÌ¶û ºñ±³ÇØ¼­ °°À¸¸é true
+		} else if (num == 0){ // numì— ì €ì¥ëœ ê°’ì´ë‘ 0ì´ë‘ ë¹„êµí•´ì„œ ê°™ìœ¼ë©´ true
 			
-			System.out.println("0 ÀÔ´Ï´Ù.");
+			System.out.println("0 ì…ë‹ˆë‹¤.");
 		
 		} else {
 		
-			System.out.println("À½¼öÀÔ´Ï´Ù.");
+			System.out.println("ìŒìˆ˜ì…ë‹ˆë‹¤.");
 		
 		}
-		
 		
 	}
 

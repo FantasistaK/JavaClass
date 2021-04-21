@@ -3,16 +3,16 @@ package day03_0401;
 public class Ex8_NestedIf {
 
 	public static void main(String[] args) {
-		// ÁßÃ¸ if¹®
+		// ì¤‘ì²© ifë¬¸
 		/* 
-		 * if(¼­·ù¹®Á¦ ¾øÀ½?) {
-		 * 		if(¸éÁ¢ Àßº½?) {
-		 * 			ÇÕ°İ
+		 * if(ì„œë¥˜ë¬¸ì œ ì—†ìŒ?) {
+		 * 		if(ë©´ì ‘ ì˜ë´„?) {
+		 * 			í•©ê²©
 		 * 		} else {
-		 * 			ºÒÇÕ°İ
+		 * 			ë¶ˆí•©ê²©
 		 * 		}
 		 * 
-		 * } else if(Á¶°Ç½Ä) {
+		 * } else if(ì¡°ê±´ì‹) {
 		 * 
 		 * } else {
 		 * 

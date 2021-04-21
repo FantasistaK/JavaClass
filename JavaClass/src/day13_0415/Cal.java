@@ -7,23 +7,23 @@ public class Cal {
 	Scanner sc = new Scanner(System.in);
 	int num1, num2;
 	
-	// µ¡¼À ¸Þ¼Òµå
+	// ë§ì…ˆ ë©”ì†Œë“œ
 	void sum (int num1, int num2) {
 		
 		int sum = num1 + num2;
-		System.out.println("°á°ú > "+sum);
+		System.out.println("ê²°ê³¼ > "+sum);
 		
 	}
 	
-	// »¬¼À ¸Þ¼Òµå
+	// ëº„ì…ˆ ë©”ì†Œë“œ
 	void sub (int num1, int num2) {
 		
 		int sub = num1 - num2;
-		System.out.println("°á°ú > "+sub);
+		System.out.println("ê²°ê³¼ > "+sub);
 		
 	}
 	
-	// °ö¼À ¸Þ¼Òµå
+	// ê³±ì…ˆ ë©”ì†Œë“œ
 	int mul (int num1, int num2) {
 		
 		int mul = num1 * num2;
@@ -31,12 +31,12 @@ public class Cal {
 		
 	}
 	
-	// ³ª´°¼À ¸Þ¼Òµå
+	// ë‚˜ëˆ—ì…ˆ ë©”ì†Œë“œ
 	double div () {
 		
-		System.out.print("Ã¹¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä > ");
+		System.out.print("ì²«ë²ˆì§¸ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš” > ");
 		int num1 = sc.nextInt();
-		System.out.print("µÎ¹øÂ° ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä > ");
+		System.out.print("ë‘ë²ˆì§¸ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš” > ");
 		int num2 = sc.nextInt();
 		
 		double div = (double)(num1) / (double)(num2);

@@ -3,7 +3,7 @@ package day03_0401;
 public class Ex6_Ifelseif {
 
 	public static void main(String[] args) {
-		// ¿©·¯°³ÀÇ Á¶°ÇÀ» µûÁú ¶§
+		// ì—¬ëŸ¬ê°œì˜ ì¡°ê±´ì„ ë”°ì§ˆ ë•Œ
 		int num1=5, num2=3;
 		
 		if(num1 > 0) {

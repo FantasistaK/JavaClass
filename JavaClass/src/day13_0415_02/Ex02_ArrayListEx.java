@@ -6,9 +6,9 @@ public class Ex02_ArrayListEx {
 
 	public static void main(String[] args) {
 		/*
-		 * ArrayList¿¡ ¿µ¾î·Î µÈ ´Ü¾î 5°³¸¦ ½ºÄ³³Ê·Î ÀÔ·Â¹Ş°í
-		 * ÀÔ·Â¹ŞÀº ´Ü¾î¸¦ ¸ğµÎ Ãâ·ÂÇÏ°í
-		 * ¸¶Áö¸·¿¡´Â °¡Àå ±ä ´Ü¾î¸¦ Ãâ·ÂÇÏ½Ã¿À
+		 * ArrayListì— ì˜ì–´ë¡œ ëœ ë‹¨ì–´ 5ê°œë¥¼ ìŠ¤ìºë„ˆë¡œ ì…ë ¥ë°›ê³ 
+		 * ì…ë ¥ë°›ì€ ë‹¨ì–´ë¥¼ ëª¨ë‘ ì¶œë ¥í•˜ê³ 
+		 * ë§ˆì§€ë§‰ì—ëŠ” ê°€ì¥ ê¸´ ë‹¨ì–´ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤
 		 */
 		
 		String var1 = "water";
@@ -18,7 +18,7 @@ public class Ex02_ArrayListEx {
 		List<String> list = new ArrayList<String>();
 		
 		for(int i=0;i<5;i++) {
-			System.out.print("´Ü¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä :");
+			System.out.print("ë‹¨ì–´ë¥¼ ì…ë ¥í•˜ì„¸ìš” :");
 			list.add(sc.next());
 		}
 		int maxlength = 0;
@@ -35,7 +35,7 @@ public class Ex02_ArrayListEx {
 			}
 		}
 		
-		System.out.println("°¡Àå ±ä ´Ü¾î´Â : "+list.get(max));
+		System.out.println("ê°€ì¥ ê¸´ ë‹¨ì–´ëŠ” : "+list.get(max));
 		
 		
 	}
